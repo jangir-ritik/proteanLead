@@ -4,7 +4,7 @@ import Image from 'next/image';
 import heroSectionBgRight from '../../../public/images/heroSectionBgRight.png';
 import heroSectionBgLeft from '../../../public/images/heroSectionBgLeft.png';
 import { borel, openSans } from '../fonts';
-import PdfViewer from '../components/PdfViewer';
+// import PdfViewer from '../components/PdfViewer';
 
 function HeroSection() {
   return (
@@ -15,7 +15,7 @@ function HeroSection() {
       </div>
       <div className="rightWrapper">
         {/* <Slide /> */}
-        <PdfViewer />
+        {/* <PdfViewer /> */}
       </div>
       <Image id='heroSectionLeftImage' src={heroSectionBgLeft} alt="decorative image" />
       <Image id='heroSectionRightImage' src={heroSectionBgRight} alt="decorative image" />

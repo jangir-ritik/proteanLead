@@ -13,47 +13,47 @@ import footerBg from '../../../public/images/footerBg.png';
 const pagesData = [
     {
         title: 'Privacy policy',
-        url: '/privacyPolicy',
+        url: 'https://www.proteantech.in/policy',
     },
     {
         title: 'Disclaimer',
-        url: '/disclaimer',
+        url: 'https://www.proteantech.in/disclaimer',
     },
     {
         title: 'Terms & Conditions',
-        url: '/terms',
+        url: 'https://www.proteantech.in/terms',
     },
-    {
-        title: 'Connect',
-        url: '/connect',
-    },
+    // {
+    //     title: 'Connect',
+    //     url: '/connect',
+    // },
 ]
 
 const socialsData = [
     {
         img: li,
         title: 'linkedin',
-        url: ""
+        url: "https://www.linkedin.com/company/proteantech/"
     },
     {
         img: x,
         title: 'x',
-        url: ""
+        url: "https://www.twitter.com/ProteanEgovTech"
     },
     {
         img: fb,
         title: 'facebook',
-        url: ""
+        url: "https://www.facebook.com/ProteanTechnologies"
     },
     {
         img: yt,
         title: 'youtube',
-        url: ""
+        url: "https://www.youtube.com/@proteanegovtechnologies"
     },
     {
         img: ig,
         title: 'instagram',
-        url: ""
+        url: "https://www.instagram.com/ProteanTechnologies"
     },
 ]
 
@@ -70,7 +70,7 @@ function Footer() {
                 {pagesData.map((page, index) => {
                     return (
                     <li key={index}>
-                        <Link href={page.url} title={page.title}>{page.title}</Link>
+                        <a href={page.url} title={page.title}>{page.title}</a>
                     </li>
                     )
                 })}
@@ -81,9 +81,9 @@ function Footer() {
                 {socialsData.map((social, index) => {
                     return (
                     <li key={index}>
-                        <Link href={social.url} title={social.title}>
+                        <a href={social.url} title={social.title}>
                             <Image src={social.img} alt={social.title} />
-                        </Link>
+                        </a>
                     </li>
                     )
                 })}

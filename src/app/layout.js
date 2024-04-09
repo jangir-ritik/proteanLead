@@ -13,12 +13,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      {/* <body className={`${openSans.className}`}>
+      <body className={`${openSans.className}`}>
       <Header />
         {children}
         <Footer />
-        </body> */}
-      <h1>this is some text</h1>
+        </body>
     </html>
   );
 }
